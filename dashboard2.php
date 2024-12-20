@@ -1,14 +1,14 @@
 <?php
 // Database connection settings
-$servername = "localhost";
-$username = "iot_user";
-$password = "iot@1122";
-$dbname = "iotdata";
+$servername = "";
+$username = "";
+$password = "";
+$dbname = "";
 
 // Function to generate suggestions using the Groq API
 function getSuggestionFromGroq($type, $value) {
     $url = 'https://api.groq.com/openai/v1/chat/completions';
-    $apiKey = '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';
+    $apiKey = '';
 
     $messageContent = "Provide a health suggestion in 2 short sentences based on the following: $type is $value.";
 
